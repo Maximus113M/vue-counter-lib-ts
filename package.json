@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "tsc && rollup -c"
   },
   "author": "Maximus113",
   "license": "ISC",

@@ -18,14 +18,14 @@ module.exports = {
   ],
   external: ['vue'],
   plugins: [
-    resolve({
-      extensions: ['.js', '.ts', '.vue']
-    }),
-    commonjs(),
     vue(),
     typescript({
       tsconfig: './tsconfig.json',
       useTsconfigDeclarationDir: true
-    })
+    }),
+    resolve({
+      extensions: ['.js', '.ts', '.vue']
+    }),
+    commonjs(),
   ]
 }
